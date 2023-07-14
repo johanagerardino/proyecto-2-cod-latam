@@ -1,0 +1,246 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/*desktop*/
+@media (min-width:1024px)
+{
+   h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    section {
+        width: 100%;
+        flex-direction: row;                
+    }
+
+    article.presentacion{
+        width: 50%;
+        text-align: left;
+    }
+
+    ul#contacto-links li{
+        margin: 32px;
+    }
+
+}
+
+
+@media(min-width:768px){
+    p{
+        font-size: 20px;
+    }   
+}
+
+
+
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    /* display: flexbox; */
+}
+
+body{
+    min-height: "100vh";
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #0f0f0f;  
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+    background-color:#fbfbfb;
+    top:0;
+    left: 0; 
+}
+
+.logo{
+    width: 100px;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.parrafo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+ul.menu{
+    display: flex;
+    font-size: 20px;    
+}
+
+li.menu-item a{
+    padding: 16px;
+    display: inline-block;  
+}
+
+li.menu-item:hover, 
+li.menu-item a.active,
+a.iconos:hover{
+    background: #64B5F6 ;
+    transition: background-color 0.3s;  
+}
+
+
+#inicio{
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_principal{
+    font-size: 36px;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   justify-content: initial;
+}
+
+
+.foto{
+    border-radius: 50%;
+    width: 320px; 
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: #64B5F6 ;
+    color: #fbfbfb;
+    border-radius: 1em;
+    font-size: 20px;
+    padding: 10px; 
+    width: 300px;
+    text-align: center;    
+}
+
+#contacto{
+    border-radius: 0.5em;
+    text-align: center;
+    color:  #0f0f0f;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.parrafo2{
+    background-color: #64B5F6 ;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.texto_secundario{
+    font-size: 28px;
+}
+
+
+.iconos{
+    display: flex;
+    width: 300px;
+    margin-top: 15px;
+} 
+
+.icono {
+    padding: 20px;
+}
+
+footer{
+    min-height: "100vh";
+    background-color: #64B5F6 ;
+    height: 90px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Modo_Oscuro {
+    background-color: black !important;
+    color: #fbfbfb !important;
+  }
+
+  #boton{
+    width: 50px;
+    height: 50px;
+    background-color: #64B5F6;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;  }
+  
+  #boton i{
+    font-size: 30px;
+  }
+  
